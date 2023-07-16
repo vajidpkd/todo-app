@@ -1,0 +1,83 @@
+:root {
+  --clr-1: #27374d;
+  --clr-2: #526d82;
+  --clr-3: #9db2bf;
+  --clr-4: #dde6ed;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-1);
+  color: var(--clr-2);
+  font-family: sans-serif;
+}
+
+.TodoApp {
+  width: 350px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-section {
+  background-color: var(--clr-4);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.input-section form {
+  display: flex;
+  gap: 10px;
+}
+
+.input-section button {
+  width: 50px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: var(--clr-2);
+  color: #dde6ed;
+}
+
+.input-section input {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid var(--clr-3);
+  color: var(--clr-2);
+  border-radius: 6px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border-radius: 6px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: var(--clr-4);
+  margin-bottom: 10px;
+}
+#complite:not(span) {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+img {
+  margin-left: 10px;
+}
